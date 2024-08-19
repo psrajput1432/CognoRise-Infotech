@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Notes
+            <div id="logo">
+                <i class="ri-arrow-down-s-fill"></i>
+            </div>
+            <div class="topIcons">
+                <div id="list">
+                    <i class="ri-list-unordered"></i>
+                </div>
+                <div id="setting">
+                    <i class="ri-settings-3-line"></i>
+                </div>
+            </div>
+        </h1>
+        
+        <h3>
+            <div id="lens">
+                <i class="ri-search-line"></i>
+            </div>
+            Search
+        </h3>
+    </div>
+
+    <div id="fakeheader"></div>
+
+    <!-- Task -->
+    <div id="task-container">
+        <ul id="task-list"></ul>
+    </div>
+
+    <div id="bottomHeader">
+        <div id="Notes">
+            <i class="ri-file-list-2-fill"></i>
+        </div>
+        <div id="To-do">
+            <i class="ri-checkbox-circle-fill"></i>
+        </div>
+    </div>
+
+    <div id="add">
+        <i class="ri-add-circle-fill"></i>
+    </div>
+    
+    <!-- Task -->
+    <div id="task-modal">
+        <input type="text" id="task-input" placeholder="Enter a new task">
+        <button id="save-task">Save Task</button>
+    </div>
+    <div id="task-modal-overlay"></div>
+
+</body>
+<script src="script.js"></script>
+</html>
